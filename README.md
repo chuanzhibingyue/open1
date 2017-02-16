@@ -1,28 +1,34 @@
 open source project 
 
-vi .git/info/exclude
+== Ignore binary and logs for git == 
+   vi .git/info/exclude
 
-**/target/*
+   **/target/*
 
-**/logs/*
+  **/logs/*
 
 == Installation and build ==
+
 1. install dependent jars
-cd dependent
-./install.sh
+
+  cd dependent
+
+  ./install.sh
+
 2. build project source code
-./build.sh
+  ./build.sh
 
 3. collect jars into env-pay to run
-./deploy.sh
+   ./deploy.sh
 
 4. run dubbo registry and monitor
-./run_dubbo.sh
+   ./run_dubbo.sh
 
 5. run services 
-./run_services.sh
+   ./run_services.sh
 
 6. run tomcat and webapps
-copy webapps/*.war to tomcat
 
-./bin/catalina run
+   copy webapps/*.war to tomcat
+
+  ./bin/catalina run
