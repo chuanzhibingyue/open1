@@ -1,2 +1,1 @@
-dubbo学习
-支付项目，网上下载的
+open source project 
