@@ -5,4 +5,7 @@ cp dubbo/pay-service-*/target/*.jar env-pay/
 cp -R dubbo/pay-service-*/target/lib/ env-pay/lib
 echo done
 
-
+echo copying war into directory webapps
+mkdir -p ./webapps/
+cp -R dubbo/pay-web-*/target/*.war ./webapps/
+done
