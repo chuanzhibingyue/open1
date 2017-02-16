@@ -1,3 +1,3 @@
 #!/bin/bash
-cd project
+cd dubbo 
 mvn clean install
